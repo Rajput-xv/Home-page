@@ -186,3 +186,59 @@ header{
 button{
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav .two {
+        display: none;
+    }
+
+    .nav .one {
+        order: -1; /* Moves logo to the top */
+        align-self: flex-start;
+    }
+
+    .nav.open .two {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav.open .two ul {
+        flex-direction: column;
+    }
+
+    .nav.open .two ul li {
+        margin: 5px 0;
+    }
+
+    .banner h1{
+        font-size: 50px ; 
+    }
+    .banner p{
+        font-size: small;
+    }
+    .banner button{
+        padding: 12px 34px;
+    }
+
+    .container .content .content-head .content-text h1{
+        font-size: 30px;
+    }
+    .container .content .content-head {
+        display: block;
+    }
+    .container .content .content-head .content-btn{
+        margin-left: 80%
+    }
+
+    .container .content .card{
+        display: block;
+    }
+    .container .content .card .card-item{
+        margin-top: 10px;
+    }
+}   
